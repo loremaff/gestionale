@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>CRM - Scuola edile-sicurezza</title>
+  <meta name="description" content="Customer Relationship Management">
+  <meta name="author" content="Martin Tahiraj">
+  <meta name="author" content="Lorenzo Maffioli">
+  <meta name="author" content="Mattia Pennati">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+  <link rel="stylesheet" href="css/w.css" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
+  <!--<link href="./img/favicon.ico" rel="icon" type="image/x-icon"/>-->
+  <script>
+  function apri(url) {
+    newin = window.open(url,'Inserisci Cliente','scrollbars=no,resizable=yes, width=1000,height=1000,status=no,location=no,toolbar=no');
+  }
+</script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-w foo">
+      <div id="logo">
+        <img src="./img/logo.png"/>
+      </div>
+      <nav>
+        <div class="nav">
+          <!-- DESKTOP&TABLET MENU -->
+          <div class="menu">
+            <ul>
+              <li><a href="javascript:apri('nuovo_cliente.html');">INSERISCI NUOVO CLIENTE</a></li>
+              <li><a>INSERISCI NUOVO CORSO</a></li>
+              <li><a>ESTRAPOLAZIONE CSV</a></li>
+            </ul>
+          </div>
+          <!-- SMARTPHONE MENU -->
+          <div class="device-menu">
+            <div>MENU</div>
+            <select onchange="location=this.value">
+						      <option>---</option>
+		              <option value="">INSERISCI NUOVO CLIENTE</option>
+						      <option value="">INSERISCI NUOVO CORSE</option>
+						      <option value="">ESTRAPOLAZIONE CSV</option>
+				    </select>
+          </div>
+        </div>
+      </nav>
+      </div>
+    </header>
+
+    <!--REQUESTS-->
+    <div class="request">
+      <div class="request-w foo">
+        <ul>
+          <li>
+            <div class="message-list">
+              <div class="msg-list">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="icon"><img src="./img/icon/mail.png"/></th><th>Richieste di Informazioni</th>
+                    </tr>
+                  </thead>
+                  <!--
+                    Aggiungi corsi interessati select-radio-box
+                  -->
+                  <tbody>
+                    <tr>
+                      <td>10/06/2015 13:23</td><td>From: Martin Tahiraj</td>
+                    </tr>
+                    <tr class="alt">
+                      <td>07/06/2015 11:29</td><td>From: Lorenzo Maffioli</td>
+                    </tr>
+                    <tr>
+                      <td>05/06/2015 19:01</td><td>From: Mattia Pennati</td>
+                    </tr>
+                    <tr class="alt">
+                      <td>02/06/2015 08:12</td><td>From: Federico Probo</td>
+                    </tr>
+                    <tr><td>30/05/2015 15:54</td><td>From: Mirko Rima</td></tr>
+                    <tr class="alt">
+                      <td>02/06/2015 08:12</td><td>From: Federico Probo</td>
+                    </tr>
+                    <tr class="alt">
+                      <td>02/06/2015 08:12</td><td>From: Federico Probo</td>
+                    </tr>
+                    <tr class="alt">
+                      <td>02/06/2015 08:12</td><td>From: Federico Probo</td>
+                    </tr>
+                    <tr class="alt">
+                      <td>02/06/2015 08:12</td><td>From: Federico Probo</td>
+                    </tr>
+                  </tbody>
+                </table></div>
+            </div>
+          </li>
+          <li>
+            <div class="message-box">
+              <table>
+                  <thead><tr><th>Mail From: </th></tr></thead>
+                  <tbody><tr><td>Data: </td></tr>
+                  <tr class="alt"><td>Oggetto: </td></tr>
+                  <tr><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam orci,
+                    venenatis id tortor vel, tempor pretium justo.
+                    Quisque eget malesuada turpis. Nullam leo odio, gravida in commodo at, rutrum.
+                  </td></tr>
+                  <tr class="alt"><td>Telefono: </td></tr>
+                  <tr><td>Corsi interessato: <br/>
+                    <ul>
+                      <li>Corso 1</li>
+                      <li>Corso 2</li>
+                    </ul>
+                  </td></tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--SEARCHER-->
+    <section id="content">
+      <div class="content-w foo">
+        <ul>
+        <li><div class="azienda-search">
+          <div id="gradient">RICERCA AZIENDA</div>
+          <form class="search">
+            <input class="searchTerm" placeholder="Cerca azienda..." />
+            <input class="searchButton" type="submit" value="Cerca"/>
+          </form>
+          <a class="pointer"> &raquo Inserisci nuova azienda</a>
+        </div></li>
+        <li><div class="cliente-search">
+          <div id="gradient">RICERCA CLIENTE</div>
+          <form class="search">
+            <input class="searchTerm" placeholder="Cerca cliente ..." />
+            <input class="searchButton" type="submit" value="Cerca" />
+          </form>
+          <a class="pointer"> &raquo Inserisci nuovo cliente</a>
+        </div></li>
+      </ul>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-w foo">
+        <div class="footer-descr">
+        </div>
+        <div class="copyright">
+          Copyright © 2016 - MT // LM // MP
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
